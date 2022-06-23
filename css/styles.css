@@ -1,9 +1,16 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     /* font-family: 'Ubuntu', sans-serif; */
 }
 p{
     color: grey;
+}
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-family:  'Montserrat';
+    font-weight: bold;
 }
 /* Navbar CSS */
 .navbar{
@@ -22,32 +29,40 @@ p{
     font-size: 1.2rem;
 }
 
-#title{
-    background-color: rgb(255 159 159);
-}
-.welcome-heading{
+.big-heading{
     font-family:  'Montserrat';
     font-size: 3.3rem;
     line-height: 1.5;
     font-weight: bold;
     color: white;
 }
+
+/* Title */
+#title{
+    background-color: rgb(255 159 159);
+    text-align: left;
+}
+
 .title-image{
     width: 60%;
     transform: rotate(20deg);
+    position: absolute;
+    right: 30%;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 11%;
 }
 .download-btn{
-    margin: 5% 3% 0 0;
+    margin: 5% 3% 5% 0;
 }
 
 /* features */
 #features{
     padding: 7% 12%;
+    background-color: white;
+    position: relative;
 }
-.fa-solid{
+.feature-icon{
     color:rgb(255 159 159) ;
     font-size: xxx-large;
 }
@@ -59,11 +74,10 @@ p{
 }
 .features-box{
     padding: 5%;
-    text-align: center;
 }
+
+/* testimonials */
 #testimonials{
-    
-    text-align: center;
     background-color:rgb(255 159 159)  ;
     color: white;
 }
@@ -80,7 +94,6 @@ p{
 }
 #press{
     background-color:rgb(255 159 159)  ;
-    text-align: center;
     padding-bottom: 3rem;
 }
 .press-img{
@@ -90,3 +103,37 @@ p{
 .carousel-item{
     padding: 7% 15%;
 }
+
+/* pricing */
+#pricing{
+    padding: 100px;
+}
+.pricing-card{
+    padding: 3% 2%;
+}
+
+#cta{
+    padding: 7% 15%;
+    background-color: rgb(255 159 159);
+}
+
+/* footer */
+#footer{
+    padding: 2% 15%;
+}
+.footer-icons{
+    padding: 1.5rem 1rem;
+}
+
+/* media-queries */
+@media (max-width:990px) {
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        transform: rotate(0);
+        position: static;
+    }
+}
+
